@@ -178,6 +178,13 @@ body {
         object-fit: cover;
       }
 
+      .backpack-title {
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 1.15;
+        letter-spacing: 0;
+      }
+
       .product-img {
         width: 100%;
         aspect-ratio: 360 / 450;
@@ -321,6 +328,10 @@ body {
           position: static !important;
           min-height: 165px;
           background: #fff;
+        }
+
+        .backpack-title {
+          font-size: 13px;
         }
 
         .product-img {
