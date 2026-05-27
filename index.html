@@ -61,7 +61,7 @@
         </div>
       </nav>
 
-      <div class="d-flex d-md-none align-items-center justify-content-between border-bottom px-2 py-2">
+      <div class="mobile-header d-flex d-md-none align-items-center justify-content-between border-bottom">
         <a class="brand-mark brand-mark-mobile d-inline-block text-dark text-decoration-none" href="#">
           <span class="brand-line d-flex align-items-center justify-content-center">
             <span class="flex-grow-1"></span>
@@ -70,11 +70,13 @@
           </span>
           <small class="d-block text-uppercase">elite fashion store</small>
         </a>
-        <input class="form-control form-control-sm border-0 border-bottom rounded-0 w-50" type="search" placeholder="What are you looking for?">
-        <div class="d-flex align-items-center gap-3">
+        <div class="mobile-search d-flex align-items-center flex-grow-1">
+          <input class="form-control" type="search" placeholder="What are you looking for?" aria-label="Search">
           <i class="bi bi-search"></i>
-          <i class="bi bi-list fs-5"></i>
         </div>
+        <button class="mobile-menu btn border-0 p-0" type="button" aria-label="Open menu">
+          <i class="bi bi-list fs-5"></i>
+        </button>
       </div>
     </header>
 
@@ -87,12 +89,20 @@
               <h2 class="h6 fw-bold text-uppercase mb-3">Cropped Graphic T-Shirt</h2>
               <a class="btn btn-light border-white sale-btn btn-white-hover" href="#">Buy now</a>
             </div>
+            <div class="mobile-service d-md-none text-center bg-white">
+              <strong class="d-block text-uppercase">30 Days Return</strong>
+              <span class="text-secondary">Simply return it within 30 days for an exchange.</span>
+            </div>
           </article>
           <article class="col-md-4 position-relative overflow-hidden">
             <img class="hero-img d-block" src="Public/images/img-2_9c6b0dde-b59b-44ae-812c-0f74862db5dc_1080x.jpg" alt="Raglan sweater">
             <div class="hero-caption position-absolute start-0 end-0 text-center text-white">
               <h2 class="h6 fw-bold text-uppercase mb-3">Raglan Sweater</h2>
               <a class="btn btn-light border-white sale-btn btn-white-hover" href="#">Buy now</a>
+            </div>
+            <div class="mobile-service d-md-none text-center bg-white">
+              <strong class="d-block text-uppercase">Free US Delivery</strong>
+              <span class="text-secondary">On orders over $200!</span>
             </div>
           </article>
           <article class="col-md-4 position-relative overflow-hidden">
@@ -101,11 +111,15 @@
               <h2 class="h6 fw-bold text-uppercase mb-3">Sleeve Hoodie</h2>
               <a class="btn btn-light border-white sale-btn btn-white-hover" href="#">Buy now</a>
             </div>
+            <div class="mobile-service d-md-none text-center bg-white">
+              <strong class="d-block text-uppercase">Support 24/7</strong>
+              <span class="text-secondary">Contact us 24 hours a day, 7 days a week</span>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="container-fluid px-0 border-bottom">
+      <section class="container-fluid px-0 border-bottom d-none d-md-block">
         <div class="row g-0 text-center">
           <div class="col-md-4 py-3 py-md-4 border-bottom">
             <strong class="d-block text-uppercase small">30 Days Return</strong>
@@ -191,7 +205,7 @@
         </div>
       </section>
 
-      <section class="py-5">
+      <section class="summer-section py-5">
         <div class="container py-md-5">
           <h2 class="h3 fw-bold text-uppercase text-center mb-5">Summer Trending</h2>
           <div class="row g-4 g-md-5">
@@ -204,7 +218,7 @@
                   <img src="Public/images/7_7d379fe4-a861-4ff4-a474-15b70e999b6a_50x50.jpg" alt="">
                   <img src="Public/images/9_50x50.jpg" alt="">
                 </div>
-                <h3 class="small mt-3 mb-1">Eos anear lang sleeve blouse</h3>
+                <h3 class="small mt-3 mb-1">Eco aware long sleeve blouse</h3>
                 <div class="small">★★★★★</div>
                 <div class="small fw-bold mt-1">$47.00</div>
               </article>
@@ -218,7 +232,7 @@
                   <img src="Public/images/4_134c3653-e3f1-4c43-8367-086c066c1762_50x50.jpg" alt="">
                   <img src="Public/images/5_bcff670c-87f8-47c7-a8f5-7aa2b3e8b472_50x50.jpg" alt="">
                 </div>
-                <h3 class="small mt-3 mb-1">Eos Aenean organic cotton top</h3>
+                <h3 class="small mt-3 mb-1">Eco Aware organic cotton top</h3>
                 <div class="small">★★★★★</div>
                 <div class="small fw-bold mt-1">$39.00</div>
               </article>
@@ -247,7 +261,7 @@
         </div>
       </section>
 
-      <section class="text-center border-top py-5">
+      <section class="friends-section text-center border-top py-5">
         <div class="container py-md-4">
           <h2 class="h3 fw-bold text-uppercase mb-4">Let's Be Friends</h2>
           <p class="text-secondary mb-2">Follow us: @salehub</p>
@@ -260,9 +274,9 @@
       <section class="container-fluid px-0">
         <div class="row g-0">
           <div class="col-6 col-md-3"><img class="insta-img d-block" src="Public/images/lb-1_88ecbdcc-c1c6-47af-9cb5-1f21ebae7c4c_720x.png" alt="Fashion gallery image 1"></div>
-          <div class="col-6 col-md-3"><img class="insta-img d-block" src="Public/images/lb-3_243a2a47-8869-47c2-a1b7-ea9163d96e52_720x.png" alt="Fashion gallery image 2"></div>
-          <div class="col-6 col-md-3"><img class="insta-img d-block" src="Public/images/lb-4_d1d516ae-775a-453a-a97b-84c9e80f69cd_720x.png" alt="Fashion gallery image 3"></div>
-          <div class="col-6 col-md-3"><img class="insta-img d-block" src="Public/images/lb-5_fbd8fa3f-d8a8-4ef1-a023-c348c802ad38_720x.png" alt="Fashion gallery image 4"></div>
+          <div class="col-6 col-md-3"><img class="insta-img d-block" src="Public\images\blog-2_900x.png" alt="Fashion gallery image 2"></div>
+          <div class="col-6 col-md-3 d-none d-md-block"><img class="insta-img d-block" src="Public/images/lb-4_d1d516ae-775a-453a-a97b-84c9e80f69cd_720x.png" alt="Fashion gallery image 3"></div>
+          <div class="col-6 col-md-3 d-none d-md-block"><img class="insta-img d-block" src="Public/images/lb-5_fbd8fa3f-d8a8-4ef1-a023-c348c802ad38_720x.png" alt="Fashion gallery image 4"></div>
         </div>
       </section>
     </main>
@@ -277,8 +291,39 @@
               <input class="form-control rounded-0" type="email" placeholder="Email address" aria-label="Email address">
               <button class="btn btn-dark join-btn" type="submit">Join</button>
             </form>
+            <div class="d-none d-md-block">
+              <p class="text-secondary lh-lg">We're available by phone <strong class="text-dark">+123-456-789</strong><br>info@example.com<br>Monday till Friday 10 to 6 EST</p>
+              <h3 class="small fw-bold text-uppercase mt-4 mb-3">Get more Reserved on:</h3>
+              <div class="d-flex gap-3">
+                <a class="text-dark" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="text-dark" href="#"><i class="bi bi-twitter-x"></i></a>
+                <a class="text-dark" href="#"><i class="bi bi-pinterest"></i></a>
+                <a class="text-dark" href="#"><i class="bi bi-vimeo"></i></a>
+                <a class="text-dark" href="#"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile-block d-md-none">
+            <h3 class="small fw-bold text-uppercase mb-3">About Us</h3>
+            <ul class="list-unstyled lh-lg">
+              <li><a class="footer-link" href="#">About Us</a></li>
+              <li><a class="footer-link" href="#">Contact us</a></li>
+              <li><a class="footer-link" href="#">Factories</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="footer-mobile-block d-md-none">
+            <h3 class="small fw-bold text-uppercase mb-3">My Account</h3>
+            <ul class="list-unstyled lh-lg">
+              <li><a class="footer-link" href="#">Login</a></li>
+              <li><a class="footer-link" href="#">Register</a></li>
+              <li><a class="footer-link" href="#">My Wishlist</a></li>
+              <li><a class="footer-link" href="#">Check Out</a></li>
+            </ul>
+          </div>
+          <div class="footer-mobile-block footer-mobile-contact d-md-none">
             <p class="text-secondary lh-lg">We're available by phone <strong class="text-dark">+123-456-789</strong><br>info@example.com<br>Monday till Friday 10 to 6 EST</p>
-            <h3 class="small fw-bold text-uppercase mt-4 mb-3">Get more Reserved on:</h3>
+            <h3 class="small fw-bold text-uppercase mb-3">Get more Reserved on:</h3>
             <div class="d-flex gap-3">
               <a class="text-dark" href="#"><i class="bi bi-facebook"></i></a>
               <a class="text-dark" href="#"><i class="bi bi-twitter-x"></i></a>
@@ -287,7 +332,25 @@
               <a class="text-dark" href="#"><i class="bi bi-instagram"></i></a>
             </div>
           </div>
-          <div class="col-6 col-lg-2 offset-lg-1">
+          <div class="footer-mobile-block d-md-none">
+            <h3 class="small fw-bold text-uppercase mb-3">Orders and Returns</h3>
+            <ul class="list-unstyled lh-lg">
+              <li><a class="footer-link" href="#">Help and advice</a></li>
+              <li><a class="footer-link" href="#">Shipping & Returns</a></li>
+              <li><a class="footer-link" href="#">Terms and conditions</a></li>
+              <li><a class="footer-link" href="#">Refund Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-mobile-block d-md-none">
+            <h3 class="small fw-bold text-uppercase mb-3">Our Product</h3>
+            <ul class="list-unstyled lh-lg">
+              <li><a class="footer-link" href="#">Best Sellers</a></li>
+              <li><a class="footer-link" href="#">New Arrivals</a></li>
+              <li><a class="footer-link" href="#">For Him</a></li>
+              <li><a class="footer-link" href="#">For Her</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2 offset-lg-1 d-none d-md-block">
             <h3 class="small fw-bold text-uppercase mb-3">About Us</h3>
             <ul class="list-unstyled lh-lg">
               <li><a class="footer-link" href="#">About Us</a></li>
@@ -303,7 +366,7 @@
               <li><a class="footer-link" href="#">Refund Policy</a></li>
             </ul>
           </div>
-          <div class="col-6 col-lg-2">
+          <div class="col-6 col-lg-2 d-none d-md-block">
             <h3 class="small fw-bold text-uppercase mb-3">My Account</h3>
             <ul class="list-unstyled lh-lg">
               <li><a class="footer-link" href="#">Login</a></li>
@@ -324,7 +387,7 @@
       <div class="border-top py-4">
         <div class="container">
           <div class="row align-items-center gy-3 small text-secondary text-center text-md-start">
-            <div class="col-md-4">Copyright © 2021 Vinovathemes.</div>
+            <div class="col-md-4">Copyright © 2026 TranThiMyLe_24211TT3192</div>
             <div class="col-md-4 text-md-center"><img class="payment" src="Public/images/paypal_240x.png" alt="Payment methods"></div>
             <div class="col-md-4 text-md-end">Choose Currency : <span class="badge rounded-pill text-bg-light border text-dark ms-2 p-2">USD</span></div>
           </div>
